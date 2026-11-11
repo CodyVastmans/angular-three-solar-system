@@ -1,0 +1,43 @@
+:host {
+  display: contents;
+}
+
+.workshop-heading {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  pointer-events: none;
+}
+
+.workshop-heading p {
+  margin: 0 0 0.6rem;
+  color: #c9ad72;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+}
+
+.workshop-heading h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 400;
+}
+
+.workshop-heading h1 span {
+  color: #c9ad72;
+  font-style: italic;
+}
+
+.workshop-heading > span {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: #9c9ba9;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .workshop-heading {
+    top: 1.25rem;
+    left: 1.25rem;
+  }
+}

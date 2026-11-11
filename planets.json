@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Mercury",
+    "description": "The smallest planet, racing around the Sun on a short and scorching orbit.",
+    "radius": 0.38,
+    "rotation_speed": 0.004,
+    "orbit_distance": 10,
+    "orbit_speed": 0.04,
+    "card_values": {
+      "radius": "0.383 Earth radii",
+      "orbit_distance": "0.387 AU",
+      "rotation_period": "58.6 days",
+      "orbital_period": "88 days"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Venus",
+    "description": "A brilliant world wrapped in thick clouds, with a surface hot enough to melt lead.",
+    "radius": 0.95,
+    "rotation_speed": 0.001,
+    "orbit_distance": 14,
+    "orbit_speed": 0.03,
+    "card_values": {
+      "radius": "0.949 Earth radii",
+      "orbit_distance": "0.723 AU",
+      "rotation_period": "243 days (retrograde)",
+      "orbital_period": "225 days"
+    },
+    "has_clouds": true
+  },
+  {
+    "id": 3,
+    "name": "Earth",
+    "description": "Our pale blue home: the only world we know of with liquid oceans on its surface.",
+    "radius": 1,
+    "rotation_speed": 0.01,
+    "orbit_distance": 19,
+    "orbit_speed": 0.025,
+    "card_values": {
+      "radius": "1 Earth radius",
+      "orbit_distance": "1 AU",
+      "rotation_period": "23 h 56 min",
+      "orbital_period": "365.256 days"
+    },
+    "has_clouds": true
+  },
+  {
+    "id": 4,
+    "name": "Mars",
+    "description": "A cold desert world with rusty red soil, giant volcanoes and ancient river valleys.",
+    "radius": 0.53,
+    "rotation_speed": 0.009,
+    "orbit_distance": 25,
+    "orbit_speed": 0.02,
+    "card_values": {
+      "radius": "0.532 Earth radii",
+      "orbit_distance": "1.524 AU",
+      "rotation_period": "24 h 37 min",
+      "orbital_period": "687 days"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Jupiter",
+    "description": "A colossal gas giant whose swirling storms include the centuries-old Great Red Spot.",
+    "radius": 3,
+    "rotation_speed": 0.024,
+    "orbit_distance": 35,
+    "orbit_speed": 0.015,
+    "card_values": {
+      "radius": "11.21 Earth radii",
+      "orbit_distance": "5.203 AU",
+      "rotation_period": "9 h 56 min",
+      "orbital_period": "11.86 years"
+    },
+    "has_clouds": true
+  },
+  {
+    "id": 6,
+    "name": "Saturn",
+    "description": "A gas giant encircled by spectacular rings made mostly of ice and rocky fragments.",
+    "radius": 2.5,
+    "rotation_speed": 0.022,
+    "orbit_distance": 46,
+    "orbit_speed": 0.012,
+    "card_values": {
+      "radius": "9.45 Earth radii",
+      "orbit_distance": "9.537 AU",
+      "rotation_period": "10 h 33 min",
+      "orbital_period": "29.45 years"
+    },
+    "has_clouds": true
+  },
+  {
+    "id": 7,
+    "name": "Uranus",
+    "description": "An icy, blue-green giant that spins on its side as it travels around the Sun.",
+    "radius": 1.8,
+    "rotation_speed": 0.014,
+    "orbit_distance": 58,
+    "orbit_speed": 0.009,
+    "card_values": {
+      "radius": "4.01 Earth radii",
+      "orbit_distance": "19.191 AU",
+      "rotation_period": "17 h 14 min (retrograde)",
+      "orbital_period": "84 years"
+    },
+    "has_clouds": true
+  },
+  {
+    "id": 8,
+    "name": "Neptune",
+    "description": "A distant ice giant with deep blue clouds and the fastest winds in the solar system.",
+    "radius": 1.7,
+    "rotation_speed": 0.016,
+    "orbit_distance": 69,
+    "orbit_speed": 0.007,
+    "card_values": {
+      "radius": "3.88 Earth radii",
+      "orbit_distance": "30.07 AU",
+      "rotation_period": "16 h 6 min",
+      "orbital_period": "164.8 years"
+    },
+    "has_clouds": true
+  }
+]
