@@ -1,0 +1,123 @@
+:host {
+  display: contents;
+}
+
+.planet-list {
+  position: absolute;
+  z-index: 2;
+  top: 24%;
+  right: 4.5%;
+  width: 176px;
+  padding: 1.1rem 1rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  background: rgba(11, 12, 19, 0.68);
+  backdrop-filter: blur(14px);
+}
+
+.list-label {
+  margin: 0;
+  padding: 0 0.45rem 0.7rem;
+  color: #777888;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+}
+
+.planet-link {
+  width: 100%;
+  padding: 0.57rem 0.45rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  border: 0;
+  border-radius: 3px;
+  color: #b9b8c2;
+  background: transparent;
+  font: inherit;
+  font-size: 0.74rem;
+  text-align: left;
+  cursor: pointer;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.planet-link:hover,
+.planet-link.selected {
+  color: #f4e3b8;
+  background: rgba(225, 198, 139, 0.1);
+}
+
+.planet-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #a7a7a7;
+  box-shadow: inset -2px -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.planet-dot[data-planet="mercury"] { background: #9e9387; }
+.planet-dot[data-planet="venus"] { background: #d4ae75; }
+.planet-dot[data-planet="earth"] { background: #5b9cce; }
+.planet-dot[data-planet="mars"] { background: #c86d50; }
+.planet-dot[data-planet="jupiter"] { background: #d2a77d; }
+.planet-dot[data-planet="saturn"] { background: #d5bd85; }
+.planet-dot[data-planet="uranus"] { background: #8fced2; }
+.planet-dot[data-planet="neptune"] { background: #567ac7; }
+
+.solar-dot {
+  width: 8px;
+  flex: 0 0 auto;
+  color: #e8c580;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.planet-arrow {
+  margin-left: auto;
+  color: #d7b76f;
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.planet-link:hover .planet-arrow,
+.planet-link.selected .planet-arrow {
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .planet-list {
+    top: auto;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    width: auto;
+    padding: 0.65rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+  }
+
+  .list-label {
+    width: 100%;
+    padding: 0.3rem 0.35rem;
+  }
+
+  .planet-link {
+    width: calc(25% - 0.2rem);
+    padding: 0.45rem 0.35rem;
+    gap: 0.35rem;
+    font-size: 0.62rem;
+  }
+
+  .planet-arrow {
+    display: none;
+  }
+}
+
+@media (max-height: 720px) and (min-width: 761px) {
+  .planet-list {
+    top: 20%;
+    transform: scale(0.9);
+    transform-origin: top right;
+  }
+}

@@ -1,7 +1,26 @@
-<main class="workshop">
-  <app-solar-canvas />
-  <app-site-header />
+<main class="universe">
+  <app-solar-canvas
+    [planets]="planets()"
+    (planetSelected)="selectPlanet($event)"
+    (sceneError)="handleSceneError($event)"
+  />
+
+  <app-site-header [planetCount]="planets().length" />
   <app-intro-panel />
-  <app-planet-list />
-  <app-planet-card />
+  <app-planet-list
+    [planets]="planets()"
+    [selectedPlanetId]="selectedPlanet()?.id ?? null"
+    (planetSelected)="selectPlanet($event)"
+    (solarViewSelected)="focusSolarView()"
+  />
+
+  <app-planet-card
+    (closed)="selectPlanet(null)"
+  />
+
+  @if (loadError(); as error) {
+    <p class="load-error" role="alert">{{ error }}</p>
+  }
+
+  <footer class="footer-note"><span>DRAG YOUR GAZE</span><span class="footer-divider"></span><span>CLICK A PLANET TO EXPLORE</span></footer>
 </main>

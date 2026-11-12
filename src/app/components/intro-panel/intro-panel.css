@@ -4,7 +4,7 @@
 
 .workshop-heading {
   position: absolute;
-  top: 2rem;
+  top: 5rem;
   left: 2rem;
   pointer-events: none;
 }
@@ -37,7 +37,7 @@
 
 @media (max-width: 600px) {
   .workshop-heading {
-    top: 1.25rem;
+    top: 4.25rem;
     left: 1.25rem;
   }
 }

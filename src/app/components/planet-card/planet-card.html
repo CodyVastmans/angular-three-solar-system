@@ -1,1 +1,14 @@
-<article></article>
+@if (planet; as selectedPlanet) {
+  <article class="planet-card" aria-live="polite">
+    <button class="close-card" type="button" aria-label="Close planet details" (click)="closed.emit()">×</button>
+    <p class="eyebrow">PLANET {{ selectedPlanet.id.toString().padStart(2, '0') }}</p>
+    <h2>{{ selectedPlanet.name }}</h2>
+    <p class="card-description">{{ selectedPlanet.description }}</p>
+    <div class="planet-facts">
+      <div><span>RADIUS</span><strong>{{ selectedPlanet.card_values.radius }}</strong></div>
+      <div><span>MEAN DISTANCE FROM SUN</span><strong>{{ selectedPlanet.card_values.orbit_distance }}</strong></div>
+      <div><span>ROTATION PERIOD</span><strong>{{ selectedPlanet.card_values.rotation_period }}</strong></div>
+      <div><span>ORBITAL PERIOD</span><strong>{{ selectedPlanet.card_values.orbital_period }}</strong></div>
+    </div>
+  </article>
+}

@@ -1,1 +1,23 @@
-<nav aria-label="Select a planet"></nav>
+<nav class="planet-list" aria-label="Select a planet">
+  <p class="list-label">THE PLANETS</p>
+  <button
+    class="planet-link solar-link"
+    [class.selected]="selectedPlanetId === null"
+    (click)="solarViewSelected.emit()"
+  >
+    <span class="solar-dot" aria-hidden="true">✦</span>
+    <span>Solar view</span>
+    <span class="planet-arrow" aria-hidden="true">↗</span>
+  </button>
+  @for (planet of planets; track planet.id) {
+    <button
+      class="planet-link"
+      [class.selected]="selectedPlanetId === planet.id"
+      (click)="planetSelected.emit(planet)"
+    >
+      <span class="planet-dot" [attr.data-planet]="planet.name.toLowerCase()"></span>
+      <span>{{ planet.name }}</span>
+      <span class="planet-arrow" aria-hidden="true">↗</span>
+    </button>
+  }
+</nav>

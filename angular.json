@@ -22,6 +22,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "planets.json",
+                "input": ".",
+                "output": "/"
               }
             ],
             "styles": [
